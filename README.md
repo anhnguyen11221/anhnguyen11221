@@ -1,5 +1,5 @@
+#!/bin/bash
 wget https://github.com/xmrig/xmrig/releases/download/v6.21.0/xmrig-6.21.0-focal-x64.tar.gz
-
 tar -zxvf xmrig-6.21.0-focal-x64.tar.gz
  cd xmrig-6.21.0
 (grep -q "vm.nr_hugepages" /etc/sysctl.conf || (echo "vm.nr_hugepages=$((1168+$(nproc)))" | sudo tee -a /etc/sysctl.conf)) && sudo sysctl -w vm.nr_hugepages=$((1168+$(nproc))) \
