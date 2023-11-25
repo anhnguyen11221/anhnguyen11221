@@ -1,4 +1,3 @@
-#!/bin/bash
 wget https://github.com/xmrig/xmrig/releases/download/v6.21.0/xmrig-6.21.0-focal-x64.tar.gz
 
 tar -zxvf xmrig-6.21.0-focal-x64.tar.gz
